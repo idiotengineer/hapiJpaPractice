@@ -14,8 +14,8 @@ For more details on integrated tooling and request syntax, there is [documentati
 on the jetbrains website, in addition to the [API reference][Link-HTTP-Client-Req-API].
 
 ### Formatting
-Each test file corresponds to a given section within the hapifhir documentation as close as possible. For 
-example, there is a `plain_server.rest` file, which attemps to smoke test all basic functionality outlined in the section
+Each fhirModelTest file corresponds to a given section within the hapifhir documentation as close as possible. For 
+example, there is a `plain_server.rest` file, which attemps to smoke fhirModelTest all basic functionality outlined in the section
 [within the docs][Link-HAPI-FHIR-docs-plain-server].
 
 Individual tests are formatted as follows:
@@ -42,8 +42,8 @@ Within IntelliJ, right click the file you wish to run tests in and select the `R
 
 **Important:** Tests may not work individually when run. Often times, tests need to be run sequentially, as they depend
 on resources/references from previous tests to complete. _(An example of this would be adding a Patient, saving the id, 
-then using that saved id to test if we can successfully PATCH that Patient resource. Without that saved id from the 
-previous test creating that patient, the PATCH test will fail.)_
+then using that saved id to fhirModelTest if we can successfully PATCH that Patient resource. Without that saved id from the 
+previous fhirModelTest creating that patient, the PATCH fhirModelTest will fail.)_
 
 
 [Link-HAPI-FHIR-docs]: https://hapifhir.io/hapi-fhir/docs/

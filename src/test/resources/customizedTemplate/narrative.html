@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Narrative Template</title>
+</head>
+<body>
+<h1>Patient Information</h1>
+<p>
+    <strong>Patient ID:</strong> [[${patient.getId()}]]
+</p>
+<p>
+    <strong>Patient Name:</strong> [[${patient.getName().get(0).getFamily()}]], [[${ patient.getName().get(0).getGivenAsSingleString()}]]
+</p>
+</body>
+</html>
